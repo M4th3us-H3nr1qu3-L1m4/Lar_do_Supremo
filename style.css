@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'adzan';
+    src: url('fontes/AdzanSubuhDemoRegular.woff2'),
+    format('woff2'),
+    url('fontes/AdzanSubuhDemoRegular.woff'),
+    format('woff');
+
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'mubarak';
+    src: url('fontes/Eid\ Mubarak.woff2'),
+    format('woff2'),
+    url('fontes/AdzanSubuhDemoRegular.woff'),
+    format('woff');
+
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --font1: 'adzan';
+    --font2: 'mubarak';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 10vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+#autor {
+    font-family: var(--font1);
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font2);
+    font-size: 6.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+.img > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+#img1 {
+    background-image: url('imagens/stairway_to_heaven.jpg');
+    background-position: center;
+}
+
+#img2 {
+    background-image: url('imagens/harp.jpg');
+    background-position: center;
+}
+
+#img3 {
+    background-image: url('imagens/sword.jpg');
+    background-position: center;
+}
+
+#img4 {
+    background-image: url('imagens/tide.jpg');
+    background-position: center;
+}
+
+#img5 {
+    background-image: url('imagens/orvalho.jpg');
+    background-position: center;
+}
+
+.img {
+    background-color: rgba(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.txt {
+    background-color: white;
+    color: black;
+}
+
+p {
+    white-space: pre-line;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
